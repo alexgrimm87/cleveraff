@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Cleveraff</title>
+
+<!--     <meta id="viewport" name="viewport" content="width=1280,user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="MobileOptimized" content="1280"/>
+    <meta name="HandheldFriendly" content="false"/>
+
+    <meta name="format-detection" content="telephone=no"> -->
+
+    <meta name="viewport" content="width=640px, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- build:css -->
+
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/formstyler.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- add new file here -->
+
+    <link rel="stylesheet" href="css/style_basic.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_adapt.css">
+    <!-- endbuild -->
+
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" href="https://rawgit.com/codefucker/finalReject/master/reject/reject.css" media="all" />
+    <script type="text/javascript" src="https://rawgit.com/codefucker/finalReject/master/reject/reject.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="global-wrapper">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="mbox">
+        <div class="header-wrap">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo.png" alt="Logo">
+              <img class="logo-mobile" src="images/logo640.png" alt="Logo">
+            </a>
+          </div>
+          <nav>
+            <div class="burger">
+              <div class="burger-brick"></div>
+              <div class="burger-brick middle"></div>
+              <div class="burger-brick"></div>
+            </div>
+            <ul class="admin">
+              <li><a class="reg-link" href="#reg-popup">РЕГИСТРАЦИЯ</a></li>
+              <li><a class="login-link" href="#login-popup">ВХОД</a></li>
+              <li class="lang">
+                <a class="active" href="#">ru</a>
+                <a href="#">ENG</a>
+              </li>
+            </ul>
+    
+            <ul class="main-menu">
+              <li><a href="news.html">НОВОСТИ</a></li>
+              <li><a href="brand.html">БРЕНД</a></li>
+              <li><a href="commission.html">КОМИССИИ</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contacts.html">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN -->
+    <div class="main">
+        <!-- add partials here -->
+        <section class="contacts">
+          <div class="mbox">
+            <h1>КОНТАКТЫ</h1>
+            <div class="contacts-wrap">
+              <div class="contacts-left">
+                <form class="contacts-form" action="ajax-programer.php" name="contacts" method="post">
+                  <h2>Здесь Вы можете задать свой вопрос</h2>
+                  <div class="form-field">
+                    <label for="name">Ваше имя</label>
+                    <input id="name" type="text" name="contact_name" placeholder="Ваше имя" required />
+                  </div>
+                  <div class="form-field">
+                    <label for="email">E - MAIL</label>
+                    <input id="email" type="email" name="contact_email" placeholder="E - MAIL" required />
+                  </div>
+                  <div class="form-field">
+                    <label for="message">СООБЩЕНИЕ</label>
+                    <textarea id="message" name="contact_message" placeholder="СООБЩЕНИЕ" required ></textarea>
+                  </div>
+                  <div class="captcha">
+                    <input type="text" name="captcha" placeholder="ВВЕДИТЕ КОД ВЕРИФИКАЦИИ" required />
+                    <div class="captcha-pic-wrap">
+                      <div class="captcha-pic">
+                        <img src="#" alt="captcha">
+                      </div>
+                      <button class="refresh-captcha"></button>
+                    </div>
+                  </div>
+                  <button class="submit" type="submit">ОТПРАВИТЬ</button>
+                </form>
+              </div>
+              <div class="contacts-right">
+                <h2>ИЛИ свяжитесь с нами через</h2>
+                <div class="contacts-link-item">
+                  <div class="contacts-link-pic">
+                    <img src="images/skype-icon.png" alt="Skype">
+                  </div>
+                  <a href="skype:CleverAff.com">CleverAff.com</a>
+                </div>
+                <div class="contacts-link-item">
+                  <div class="contacts-link-pic">
+                    <img src="images/email-icon.png" alt="Email">
+                  </div>
+                  <a href="mailto:support@CleverAff.com">support@CleverAff.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <div class="contacts-bottom">
+          <div class="mbox">
+            <div class="contacts-bottom-logo">
+              <img src="images/logo2.png" alt="Logo">
+              <p>Умные зарабатывают с нами</p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+    <!-- /MAIN -->
+
+    <div class="hidden-block">
+    
+        <div id="call_success">
+            <div class="call-success">
+                 <div class="call_success">
+                     <div class="call-title">Спасибо за заявку!</div>
+                     <div class="call-subtitle">Мы свяжемся с Вами в ближайшее время</div>
+                 </div>
+            </div>
+        </div>
+    
+        <div id="call-popup">
+            <form action="ajax.php" name="contact-form" class="contact-form">
+                <div class="contact-form-title">
+                    <h5>Lorem ipsum dolor.</h5>
+                </div>
+                <div class="contact-form-row cfix">
+                    <div class="contact-form-item">
+                        <div class="contact-form-item-input form_row">
+                            <div class="form_input">
+                                <input type="text" name="contact_name" required="required" value="" placeholder="Ваше Имя">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-item">
+                        <div class="contact-form-item-input form_row">
+                            <div class="form_input">
+                                <input type="text" name="contact_tel" value="" required="required" placeholder="Ваш номер" class="tel-mask">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-row cfix">
+                    <div class="contact-form-item">
+                        <button type="submit" class="contact-submit">
+                            <span>Отправить заявку</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    
+    
+      <div id="login-popup">
+        <h5>ВХОД</h5>
+        <form class="login-form-popup" name="login-popup">
+          <div class="login-form-wrap">
+            <div class="form-field">
+              <label for="login">ВВЕДИТЕ Ваш LOGIN</label>
+              <input id="login" type="text" name="login" required="required" placeholder="LOGIN*" />
+            </div>
+            <div class="form-field">
+              <label for="password">ВВЕДИТЕ Ваш ПАРОЛЬ</label>
+              <input id="password" type="password" name="password" required="required" placeholder="ПАРОЛь*" />
+            </div>
+          </div>
+          <div class="btn-wrap">
+            <button type="submit">ВОЙТИ</button>
+            <a href="#">ЗАБЫЛИ ПАРОЛЬ?</a>
+          </div>
+        </form>
+      </div>
+    
+      <div id="reg-popup">
+        <h5>РЕГИСТРАЦИЯ</h5>
+        <form class="reg-form-popup cfix" name="reg-popup">
+          <div class="filds-row">
+            <span>ВВЕДИТЕ Ваши ДАННЫЕ</span>
+            <div class="form-field">
+              <input type="text" name="login" required="required" placeholder="LOGIN*">
+            </div>
+            <div class="form-field">
+              <input type="text" name="name" required="required" placeholder="ИМЯ*">
+            </div>
+            <div class="form-field">
+              <input type="text" name="lastName" required="required" placeholder="ФАМИЛИЯ*">
+            </div>
+          </div>
+          <div class="filds-row">
+            <span>ВВЕДИТЕ Ваши контакты</span>
+            <div class="form-field">
+              <input type="email" name="email" required="required" placeholder="e - mail*">
+            </div>
+            <div class="form-field">
+              <input type="text" name="tel" required="required" placeholder="телефон">
+            </div>
+            <div class="form-field">
+              <input type="text" name="skype" required="required" placeholder="SKYPE">
+            </div>
+          </div>
+          <div class="filds-row">
+            <span>ВВЕДИТЕ ПАРОЛЬ</span>
+            <div class="form-field">
+              <input type="password" name="pass" required="required" placeholder="ПАРОЛь*">
+            </div>
+            <div class="form-field">
+              <input type="password" name="confirmPass" required="required" placeholder="подтвердите пароль*">
+            </div>
+          </div>
+          <button type="submit">РЕГИСТРАЦИЯ</button>
+        </form>
+      </div>
+    
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer_placeholder"></div>
+    <footer class="footer">
+      <div class="mbox cfix">
+        <div class="credit-cards">
+          <a href="#">
+            <img src="images/webmoney.png" alt="WebMoney">
+          </a>
+          <a href="#">
+            <img src="images/visa.png" alt="Visa">
+          </a>
+          <a href="#">
+            <img src="images/mastercard.png" alt="MasterCard">
+          </a>
+          <a href="#">
+            <img src="images/epayments.png" alt="ePayments">
+          </a>
+        </div>
+        <div class="copyright">
+          <span>© 2014 — 2015 CleverAff</span>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER -->
+    
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/validate_script.js" ></script>
+    
+    <!-- build:js -->
+    <script type="text/javascript" src="js/plagins/device.js" ></script>
+    <script type="text/javascript" src="js/plagins/jquery.fancybox.pack.js" ></script>
+    <script type="text/javascript" src="js/plagins/jquery.formstyler.min.js" ></script>
+    <script type="text/javascript" src="js/plagins/jquery.validate.min.js" ></script>
+    <script type="text/javascript" src="js/plagins/maskInput.js" ></script>
+    <script type="text/javascript" src="js/plagins/slick.js" ></script>
+    
+    <script type="text/javascript" src="js/basic_scripts.js" ></script>
+    <script type="text/javascript" src="js/develop/script.js" ></script>
+    <!-- endbuild -->
+    
+    <!-- /SCRIPTS -->
+
+</div>
+</body>
+</html>

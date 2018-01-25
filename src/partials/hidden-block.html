@@ -1,0 +1,104 @@
+<div class="hidden-block">
+
+    <div id="call_success">
+        <div class="call-success">
+             <div class="call_success">
+                 <div class="call-title">Спасибо за заявку!</div>
+                 <div class="call-subtitle">Мы свяжемся с Вами в ближайшее время</div>
+             </div>
+        </div>
+    </div>
+
+    <div id="call-popup">
+        <form action="ajax.php" name="contact-form" class="contact-form">
+            <div class="contact-form-title">
+                <h5>Lorem ipsum dolor.</h5>
+            </div>
+            <div class="contact-form-row cfix">
+                <div class="contact-form-item">
+                    <div class="contact-form-item-input form_row">
+                        <div class="form_input">
+                            <input type="text" name="contact_name" required="required" value="" placeholder="Ваше Имя">
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-item">
+                    <div class="contact-form-item-input form_row">
+                        <div class="form_input">
+                            <input type="text" name="contact_tel" value="" required="required" placeholder="Ваш номер" class="tel-mask">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-row cfix">
+                <div class="contact-form-item">
+                    <button type="submit" class="contact-submit">
+                        <span>Отправить заявку</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+  <div id="login-popup">
+    <h5>ВХОД</h5>
+    <form class="login-form-popup" name="login-popup">
+      <div class="login-form-wrap">
+        <div class="form-field">
+          <label for="login">ВВЕДИТЕ Ваш LOGIN</label>
+          <input id="login" type="text" name="login" required="required" placeholder="LOGIN*" />
+        </div>
+        <div class="form-field">
+          <label for="password">ВВЕДИТЕ Ваш ПАРОЛЬ</label>
+          <input id="password" type="password" name="password" required="required" placeholder="ПАРОЛь*" />
+        </div>
+      </div>
+      <div class="btn-wrap">
+        <button type="submit">ВОЙТИ</button>
+        <a href="#">ЗАБЫЛИ ПАРОЛЬ?</a>
+      </div>
+    </form>
+  </div>
+
+  <div id="reg-popup">
+    <h5>РЕГИСТРАЦИЯ</h5>
+    <form class="reg-form-popup cfix" name="reg-popup">
+      <div class="filds-row">
+        <span>ВВЕДИТЕ Ваши ДАННЫЕ</span>
+        <div class="form-field">
+          <input type="text" name="login" required="required" placeholder="LOGIN*">
+        </div>
+        <div class="form-field">
+          <input type="text" name="name" required="required" placeholder="ИМЯ*">
+        </div>
+        <div class="form-field">
+          <input type="text" name="lastName" required="required" placeholder="ФАМИЛИЯ*">
+        </div>
+      </div>
+      <div class="filds-row">
+        <span>ВВЕДИТЕ Ваши контакты</span>
+        <div class="form-field">
+          <input type="email" name="email" required="required" placeholder="e - mail*">
+        </div>
+        <div class="form-field">
+          <input type="text" name="tel" required="required" placeholder="телефон">
+        </div>
+        <div class="form-field">
+          <input type="text" name="skype" required="required" placeholder="SKYPE">
+        </div>
+      </div>
+      <div class="filds-row">
+        <span>ВВЕДИТЕ ПАРОЛЬ</span>
+        <div class="form-field">
+          <input type="password" name="pass" required="required" placeholder="ПАРОЛь*">
+        </div>
+        <div class="form-field">
+          <input type="password" name="confirmPass" required="required" placeholder="подтвердите пароль*">
+        </div>
+      </div>
+      <button type="submit">РЕГИСТРАЦИЯ</button>
+    </form>
+  </div>
+
+</div>

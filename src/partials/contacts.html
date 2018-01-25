@@ -1,0 +1,58 @@
+<section class="contacts">
+  <div class="mbox">
+    <h1>КОНТАКТЫ</h1>
+    <div class="contacts-wrap">
+      <div class="contacts-left">
+        <form class="contacts-form" action="ajax-programer.php" name="contacts" method="post">
+          <h2>Здесь Вы можете задать свой вопрос</h2>
+          <div class="form-field">
+            <label for="name">Ваше имя</label>
+            <input id="name" type="text" name="contact_name" placeholder="Ваше имя" required />
+          </div>
+          <div class="form-field">
+            <label for="email">E - MAIL</label>
+            <input id="email" type="email" name="contact_email" placeholder="E - MAIL" required />
+          </div>
+          <div class="form-field">
+            <label for="message">СООБЩЕНИЕ</label>
+            <textarea id="message" name="contact_message" placeholder="СООБЩЕНИЕ" required ></textarea>
+          </div>
+          <div class="captcha">
+            <input type="text" name="captcha" placeholder="ВВЕДИТЕ КОД ВЕРИФИКАЦИИ" required />
+            <div class="captcha-pic-wrap">
+              <div class="captcha-pic">
+                <img src="#" alt="captcha">
+              </div>
+              <button class="refresh-captcha"></button>
+            </div>
+          </div>
+          <button class="submit" type="submit">ОТПРАВИТЬ</button>
+        </form>
+      </div>
+      <div class="contacts-right">
+        <h2>ИЛИ свяжитесь с нами через</h2>
+        <div class="contacts-link-item">
+          <div class="contacts-link-pic">
+            <img src="images/skype-icon.png" alt="Skype">
+          </div>
+          <a href="skype:CleverAff.com">CleverAff.com</a>
+        </div>
+        <div class="contacts-link-item">
+          <div class="contacts-link-pic">
+            <img src="images/email-icon.png" alt="Email">
+          </div>
+          <a href="mailto:support@CleverAff.com">support@CleverAff.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="contacts-bottom">
+  <div class="mbox">
+    <div class="contacts-bottom-logo">
+      <img src="images/logo2.png" alt="Logo">
+      <p>Умные зарабатывают с нами</p>
+    </div>
+  </div>
+</div>
